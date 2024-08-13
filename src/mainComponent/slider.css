@@ -1,0 +1,28 @@
+.carousel .carousel-indicators button{
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ /*background-color: black;*/
+ background-color: darkcyan;
+
+}
+h2{
+    font-family: monospace,monospace;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: bold;
+
+}
+h6{
+    font-family: monospace,monospace;
+    color: black;
+}
+.carousel-caption{
+    position: static;
+}
+.carousel-div{
+     height: 400px;
+     background-color: #D7DBDD;
+     border-radius: 10px;
+}
