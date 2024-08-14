@@ -1,9 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./login.css";
+
+import "./pracise.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Button } from "react-bootstrap";
+//import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  //const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleSubmit = (e) => {
@@ -38,21 +42,14 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div className="login-button">
-            <Link
-              to="/home"
-              type="submit"
-              className="btn btn-primary"
-              variant="success"
-            >
-              Login
-            </Link>
-          </div>
+          <Button type="submit" className="btn btn-primary">
+            Login
+          </Button>
         </div>
       </form>
       <div className="login">
         <p>Don't have Account? </p>
-        <Link to="/register" className="btn btn-success">
+        <Link to="/register" className="btn btn-primary">
           Sign Up
         </Link>
       </div>

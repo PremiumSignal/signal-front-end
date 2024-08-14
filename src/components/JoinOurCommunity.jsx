@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import "./joinOurCommunity.css";
+import "../loginComponents/pracise.css";
 import { useState } from "react";
 
 function JoinOurCommunity() {

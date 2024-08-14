@@ -17,7 +17,7 @@ function Header() {
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="/join-our-community" className="nav-item">
-                Join Out Community
+                Join Our Community
               </Nav.Link>
             </Nav>
             <Nav className="ms-auto">

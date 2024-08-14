@@ -1,9 +1,11 @@
 import { Button } from "react-bootstrap";
-import "./register.css";
+import "./pracise.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPasswoord] = useState("");
@@ -12,6 +14,7 @@ function Register() {
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("password:", password);
+    navigate("/login");
   };
   return (
     <div className="addUser">

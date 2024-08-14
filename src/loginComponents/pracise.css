@@ -1,0 +1,93 @@
+.addUser {
+    background-color: white;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    font-family: monospace, monospace;
+}
+
+.addUserForm .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addUserForm .inputGroup label {
+    margin-top: 1rem; /* Use rem instead of px */
+}
+
+.addUserForm .inputGroup input {
+    margin-top: 0.5rem; /* Use rem instead of px */
+    padding: 0.8rem; /* Adjust padding */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.inputGroup button {
+    margin-top: 1rem; /* Use rem instead of px */
+    padding: 0.8rem;
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputGroup button:hover {
+    background-color: #007b7b; /* Darken on hover */
+}
+
+.login {
+    margin-top: 2rem; /* Use rem instead of px */
+    text-align: center;
+}
+
+.login .btn.btn-primary {
+    width: 50%; /* Adjust width for responsiveness */
+}
+
+.addUser h3 {
+    text-align: center;
+    font-weight: bold;
+    color: darkcyan;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.addUserForm .inputGroup input:hover {
+    box-shadow: 1px 1px 8px green;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .addUser {
+        margin: 30px auto;
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .addUserForm .inputGroup input,
+    .inputGroup button {
+        padding: 0.6rem; /* Adjust padding for smaller screens */
+    }
+
+    .login .btn.btn-primary {
+        width: 50%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .addUser {
+        width: 100%; /* Full width on very small screens */
+        margin: 20px auto; /* Adjust margin */
+    }
+
+    .addUserForm .inputGroup label,
+    .addUserForm .inputGroup input,
+    .inputGroup button {
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+}
