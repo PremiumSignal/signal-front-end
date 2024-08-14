@@ -34,10 +34,7 @@ function Slider() {
         {data.map((item) => {
           return (
             <Carousel.Item interval={1000} key={item.id}>
-              <div
-                className="d-block w-100 carousel-div"
-                //style={{ height: "400px", backgroundColor: "#cccccc" }}
-              >
+              <div className="d-block w-100 carousel-div">
                 <Carousel.Caption>
                   <h2>{item.title}</h2>
                   <h6>{item.subtitle}</h6>

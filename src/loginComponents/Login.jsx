@@ -1,13 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import "./pracise.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-//import { useNavigate } from "react-router-dom";
-
 const Login = () => {
-  //const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleSubmit = (e) => {
