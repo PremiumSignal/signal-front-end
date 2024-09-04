@@ -1,0 +1,18 @@
+name: Test push check action
+
+on: 
+    push:
+        branches: "*"
+
+jobs:
+    Check_Initial_Condition:
+        runs-on: ubunutu_latest
+        steps:
+            -name: Check if 2 is equal to 2
+            run: |
+            if [ 2 -eq 2 ]; then
+            echo "2 is equal to 2. Proceeding..."
+          else
+            echo "2 is not equal to 2. Stopping the push."
+            exit 1
+          fi
