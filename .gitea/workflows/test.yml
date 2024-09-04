@@ -8,7 +8,7 @@ jobs:
     Check_Initial_Condition:
         runs-on: ubuntu-latest
         steps:
-            - name: Check if 2 is equal to 2
+            -name: Check if 2 is equal to 2
             run: |
               if [ 2 -eq 2 ]; then
                 echo "2 is equal to 2. Proceeding..."
