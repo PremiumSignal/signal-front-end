@@ -8,10 +8,8 @@ jobs:
     Check_Initial_Condition:
         runs-on: ubuntu-latest
         steps:
-            - name: Check if 2 is equal to 2
-              run: |
-                if [2 -eq 2]; then
-                  echo "Okay"
-                else
-                  exit(1)
-                fi              
+            - name: Install g++ compiler
+              run: sudo apt-get update && sudo apt-get install -y g++
+      
+            - name: Compile C++ code
+              run: g++ -o main main.cpp            
