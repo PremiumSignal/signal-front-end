@@ -5,7 +5,7 @@ import "./header.css";
 function Header() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg" fixed="top" >
         <Container>
           <Navbar.Brand as={Link} to="/" className="Navbar-band">
             Blog Website
@@ -30,6 +30,9 @@ function Header() {
               <Nav.Link as={Link} to="/register" className="nav-item">
                 Register
               </Nav.Link>
+              <Nav.Link as={Link} to="/purchase" className="nav-item">
+              Purchase
+            </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

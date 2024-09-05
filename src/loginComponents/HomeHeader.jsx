@@ -5,7 +5,7 @@ import "./header.css";
 function HomeHeader() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/" className="Navbar-band">
             Blog Website
@@ -21,6 +21,9 @@ function HomeHeader() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/premium-content" className="nav-item">
               Premium Content
+            </Nav.Link>
+            <Nav.Link as={Link} to="/purchase" className="nav-item">
+              Purchase
             </Nav.Link>
             <Nav.Link as={Link} to="/logout" className="nav-item">
               Log Out

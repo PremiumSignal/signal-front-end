@@ -1,4 +1,4 @@
-.addPurchase {
+.addUser {
     background-color: white;
     width: 90%;
     max-width: 400px;
@@ -9,25 +9,25 @@
     font-family: monospace, monospace;
 }
 
-.addPurchaseForm .inputGroupForm {
+.addUserForm .inputGroup {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.addPurchaseForm .inputGroupForm label {
-    margin-top: 0.5rem;
+.addUserForm .inputGroup label {
+    margin-top: 1rem;
 }
 
-.addPurchaseForm .inputGroupForm input {
-   margin-top: 0.5rem; 
+.addUserForm .inputGroup input {
+    margin-top: 0.5rem; 
     padding: 0.8rem; 
     border-radius: 10px;
     border: 1px solid #ccc;
 }
 
-.inputGroupForm button {
-    margin-top: 2rem;
+.inputGroup button {
+    margin-top: 1rem;
     padding: 0.8rem;
     border-radius: 10px;
     background-color: darkcyan;
@@ -37,8 +37,8 @@
     transition: background-color 0.3s ease;
 }
 
-.inputGroupForm button:hover {
-    background-color: #017c7c; 
+.inputGroup button:hover {
+    background-color: #007b7b; 
 }
 
 .login {
@@ -50,7 +50,7 @@
     width: 50%; 
 }
 
-.addPurchase h3 {
+.addUser h3 {
     text-align: center;
     font-weight: bold;
     color: darkcyan;
@@ -58,19 +58,19 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-.addPurchaseForm .inputGroupForm input:hover {
+.addUserForm .inputGroup input:hover {
     box-shadow: 1px 1px 8px green;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .addPurchase {
+    .addUser {
         margin: 30px auto;
         padding: 20px; 
     }
 
-    .addPurchaseForm .inputGroupForm input,
-    .inputGroupForm button {
+    .addUserForm .inputGroup input,
+    .inputGroup button {
         padding: 0.6rem; 
     }
 
@@ -80,14 +80,14 @@
 }
 
 @media (max-width: 480px) {
-    .addPurchase {
+    .addUser {
         width: 100%; 
         margin: 40px auto; 
     }
 
-    .addPurchaseForm .inputGroupForm label,
-    .addPurchaseForm .inputGroupForm input,
-    .inputGroupForm button {
+    .addUserForm .inputGroup label,
+    .addUserForm .inputGroup input,
+    .inputGroup button {
         font-size: 0.9rem; 
     }
 }

@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import JoinOurCommunity from "./components/JoinOurCommunity";
 import PremiumContent from "./components/PremiumContent";
 import Footer from "./loginComponents/Footer";
+import Purchase from "./components/Purchase";
 
 function App() {
   const [islonIn, setIsLonIn] = useState(false);
@@ -19,13 +20,14 @@ function App() {
   return (
     <>
       <header>{!islonIn ? <Header /> : <HomeHeader />}</header>
-      <main>
+      <main style={{ marginTop: '60px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/join-our-community" element={<JoinOurCommunity />} />
+          <Route path="/purchase" element={<Purchase/>}/>
           <Route
             path="/premium-content"
             element={islonIn ? <PremiumContent /> : <Navigate to="/login" />}
